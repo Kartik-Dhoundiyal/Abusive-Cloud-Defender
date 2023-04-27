@@ -1,3 +1,4 @@
+# import the dependencies
 import os
 from azure.identity import ClientSecretCredential
 from azure.mgmt.compute import ComputeManagementClient

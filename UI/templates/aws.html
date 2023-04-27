@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="https://flowbite.com/docs/images/logo.svg"
+            class="h-8 mr-3"
+            alt="Flowbite Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Abusive Cloud Defender</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="px-6 columns-1">
+        <a href="#" class="block  p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Virtual Machine Encryption</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">It is a function that checks whether each EC2 instance in an AWS environment has an encrypted root volume. It does this by first getting a list of all EC2 instances using the describe_instances() method of the ec2_client object. Then, for each instance, it checks the BlockDeviceMappings attribute to find the instance's root volume, and checks whether the Encrypted attribute of the volume is set to True. If any instance is found that does not have an encrypted root volume, the function prints a message to the console indicating the instance ID and the issue.</p>
+        </a>
+
+        <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Virtual Machine Acess</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A function that checks whether any security groups associated with each EC2 instance in an AWS environment have unrestricted access. It does this by first getting a list of all EC2 instances using the describe_instances() method of the ec2_client object. Then, for each instance, it retrieves the instance's security group IDs and checks each security group using the describe_security_group_rules() method of the ec2_client object. For each security group, it checks whether any rule allows unrestricted access by looking for a rule with -1 as the IpProtocol (which indicates all protocols), an empty list of PrefixListIds, and an empty list of UserIdGroupPairs. If any instance is found that has a security group with unrestricted access, the function prints a message to the console indicating the instance ID and the issue.</p>
+        </a>
+
+        <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Multi-Factor Authentication Enabled</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A function that checks whether multi-factor authentication (MFA) is enabled for all IAM users in an AWS environment. It does this by first getting a list of all IAM users using the list_users() method of the iam_client object. Then, for each user, it checks whether they have any MFA devices associated with their account using the list_mfa_devices() method of the iam_client object. If no MFA devices are found for a user, the function prints a message to the console indicating the user's name and the issue.</p>
+        </a>
+
+        <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Logging</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A function that checks whether logging is enabled for all CloudTrail trails in an AWS environment. It does this by first getting a list of all trails using the describe_trails() method of the cloudtrail_client object. Then, for each trail, it checks whether logging is enabled by calling the get_trail_status() method of the cloudtrail_client object and examining the IsLogging field in the response. If logging is not enabled for a trail, the function prints a message to the console indicating the trail's name and the issue.</p>
+        </a>
+        <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Patches</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A function that checks whether there are any pending patches available for EC2 instances in an AWS environment. It does this by first getting a list of all instances using the describe_instances() method of the ec2_client object. Then, for each instance, it calls the describe_instance_patches() method of the ec2_client object to get information about any available patches. If there are any pending patches for an instance, the function prints a message to the console indicating the instance ID and the number of pending patches.</p>
+        </a>
+        <a href="#" class="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Check Unused Resources</h5>
+            <p class="font-normal text-gray-700 dark:text-gray-400">A function that checks whether there are any EC2 instances in an AWS environment that have not been used within the past 30 days. It does this by first getting a list of all instances using the describe_instances() method of the ec2_client object. Then, for each instance, it calls the lookup_events() method of the cloudtrail_client object to get a list of all CloudTrail events associated with the instance within the past 30 days. If there are no events for the instance within the past 30 days, the function prints a message to the console indicating the instance ID and the issue. The function uses datetime module to set the start time and end time for the CloudTrail event lookup.</p>
+        </a>
+    </div>
+
+    <br>
+    <footer class="py-6 px-6 flex justify-between bg-gray-800">
+      <div class="w-2/3 pr-10">
+          <h3 class="mb-5 font-semibold text-gray-400">About</h3>
+
+          <p class="text-lg text-gray-500">Lorem ipsum bla bla bla. Lorem ipsum bla bla bla. Lorem ipsum bla bla bla.</p>
+      </div>
+
+      <div class="w-1/3">
+          <h3 class="mb-5 font-semibold text-gray-400">Menu</h3>
+
+          <ul class="space-y-2">
+              <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">About</a></li>
+              <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Contact</a></li>
+              <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Privacy policy</a></li>
+              <li><a href="#" class="text-lg text-teal-500 hover:text-teal-700">Term of use</a></li>
+          </ul>
+      </div>
+  </footer>
+  </body>
+</html>
